@@ -1,6 +1,5 @@
 ﻿# battery-soldering-iron-controller
-Battery soldering iron controller base on STM32G0 MCU. Controller was made to use with T210 and T245 handles from AiXun.
-Device use 2.4" LCD (240x320) to display soldering state. Operation of device is controlled by a rotary encoder. Device support any T210 and T245 handler from AiXun with optional stand control. The tool can operate from 12V to 24V, but the default assumption was to work with batteries used in various power tools, e.g. Parkside, Bosch. The PCB project was made in Altium Desginer 21. Software was writen in C with HAL API using STM32CubeIDE.
+Industrial display design with very good readability even for a user at a considerable distance.  The display is built with 16 8x8 pixel matrix indicators with dimensions of 32x32mm.  For each indicator there is a dedicated MAX7219 controller. The controllers are connected in cascade, making control of the entire display possible using a single SPI line (MOSI, SCK, CS).  The designed display has dimensions of 250mm by 64mm. The operation of the designed device is controlled by a PIC32MX470 microcontroller. The PCB design was created in Altium Designer. The software was written in C using the MPLABX IDE development environment. 
 
 <img src="working.gif" width="800">
 <img src="menu.gif" width="800">
